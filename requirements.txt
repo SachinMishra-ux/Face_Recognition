@@ -6,3 +6,5 @@ gunicorn
 Flask
 opencv-python
 joblib
+pybase64
+PyWavelets
