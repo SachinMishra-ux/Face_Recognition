@@ -4,4 +4,4 @@ numpy
 matplotlib
 gunicorn
 Flask
-open-cv
+opencv-python
