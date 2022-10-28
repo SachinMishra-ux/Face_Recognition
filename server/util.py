@@ -64,8 +64,8 @@ def get_cv2_image_from_base64_string(b64str):
     return img
 
 def get_cropped_image_if_2_eyes(image_path, image_base64_data):
-    face_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
-    eye_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_eye.xml')
+    face_cascade = cv2.CascadeClassifier('./server/opencv/haarcascades/haarcascade_frontalface_default.xml')
+    eye_cascade = cv2.CascadeClassifier('./server/opencv/haarcascades/haarcascade_eye.xml')
 
     if image_path:
         img = cv2.imread(image_path)
@@ -93,11 +93,11 @@ if __name__ == '__main__':
 
     #print(classify_image(get_b64_test_image_for_virat(), None))
 
-    print(classify_image(get_b64_test_image_for_virat(), "./test_images/federer1.jpg"))
+    #print(classify_image(get_b64_test_image_for_virat(), "./server/test_images/federer1.jpg"))
     # print(classify_image(None, "./test_images/federer2.jpg"))
-    # print(classify_image(None, "./test_images/virat1.jpg"))
+    #print(classify_image(None, "./server/test_images/virat1.jpg"))
     # print(classify_image(None, "./test_images/virat2.jpg"))
-    # print(classify_image(None, "./test_images/virat3.jpg")) # Inconsistent result could be due to https://github.com/scikit-learn/scikit-learn/issues/13211
+    print(classify_image(None, "./server/test_images/virat3.jpg")) # Inconsistent result could be due to https://github.com/scikit-learn/scikit-learn/issues/13211
     # print(classify_image(None, "./test_images/serena1.jpg"))
     # print(classify_image(None, "./test_images/serena2.jpg"))
     # print(classify_image(None, "./test_images/sharapova1.jpg"))
