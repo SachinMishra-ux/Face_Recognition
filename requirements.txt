@@ -5,3 +5,4 @@ matplotlib
 gunicorn
 Flask
 opencv-python
+joblib
