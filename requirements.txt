@@ -4,4 +4,7 @@ numpy
 matplotlib
 gunicorn
 Flask
-open-cv
+opencv-python
+joblib
+pybase64
+PyWavelets
